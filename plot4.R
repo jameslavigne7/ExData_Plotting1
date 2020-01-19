@@ -8,7 +8,7 @@ library(dplyr)
 
 dframe1 <- dframe %>% filter(Date == '1/2/2007' | Date == '2/2/2007')
 
-par(mfrow = c(2,2))
+par(mfrow = c(2,2),mar = c(4,4,.1,1))
 
 x <- as.POSIXct(paste(as.Date(dframe1$Date,'%d/%m/%Y'),dframe1$Time,sep= ' '))
 
@@ -34,7 +34,7 @@ lines(x,
       dframe1$Sub_metering_3,
       type = "l", main = NA, xlab = NA,
       ylab = "Energy sub metering",cex.lab = .8, col = "blue")
-legend("topright",col = c("purple","red","blue"),legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),lwd = 2.5,cex = .75)
+legend("topright",col = c("purple","red","blue"),legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),lwd = 2.5,cex = .4)
 
 plot(x,
      dframe1$Global_reactive_power, ylab = "Global_reactive_power",
