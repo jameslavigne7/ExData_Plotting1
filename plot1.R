@@ -12,5 +12,4 @@ hist(as.numeric(dframe1$Global_active_power),main = "Global Active Power",cex.ma
      xlab = "Global Acive Power (killoWatts)",cex.lab = .8, breaks = seq(0,10,.5),
      xlim = c(0,6), col = "red", ylim = c(0,1200))
 
-dev.copy(png, "ExData_Plotting1/plot1.png",width = 480, height = 480)
-dev.off()
+dev.copy(png, "plot1.png",width = 480, height = 480)

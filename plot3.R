@@ -23,5 +23,5 @@ lines(as.POSIXct(paste(as.Date(dframe1$Date,'%d/%m/%Y'),dframe1$Time,sep= ' ')),
 
 legend("topright",col = c("purple","red","blue"),legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),cex = .5, lwd = 2,box.lwd = .5)
 
-dev.copy(png,"ExData_Plotting1/plot3.png",width = 480,height = 480)
+dev.copy(png,"plot3.png",width = 480,height = 480)
 dev.off()

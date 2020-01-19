@@ -8,7 +8,7 @@ library(dplyr)
 
 dframe1 <- dframe %>% filter(Date == '1/2/2007' | Date == '2/2/2007')
 
-par(mfrow = c(2,2),mai = c(.6,.6,.1,.06))
+par(mfrow = c(2,2),mai = c(.8,.6,.1,.06))
 
 x <- as.POSIXct(paste(as.Date(dframe1$Date,'%d/%m/%Y'),dframe1$Time,sep= ' '))
 plot(x,
@@ -38,5 +38,5 @@ plot(x,
      as.numeric(dframe1$Global_reactive_power), ylab = "Global_reactive_power",
      type = "l", main = NA, xlab = "datetime",cex.lab = .8, col = "black")
 
-dev.copy(png,"ExData_Plotting1/plot4.png",width = 480,height = 480)
+dev.copy(png,"plot4.png",width = 480,height = 480)
 dev.off()

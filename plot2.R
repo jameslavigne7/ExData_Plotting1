@@ -12,5 +12,5 @@ plot(as.POSIXct(paste(as.Date(dframe1$Date,'%d/%m/%Y'),dframe1$Time,sep= ' ')),
     as.numeric(dframe1$Global_active_power),
     type = "l", main = NA, xlab = NA,
      ylab = "Global Acive Power (killoWatts)",cex.lab = .8, col = "black")
-dev.copy(png, "ExData_Plotting1/plot2.png",width = 480, height = 480)
+dev.copy(png, "plot2.png",width = 480, height = 480)
 dev.off()
